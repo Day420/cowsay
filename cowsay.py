@@ -3,11 +3,11 @@ from colorama import *
 
 class cow:
     def cowsay(text):
-        msg_len = int(len(text))
+        text_len = int(len(text))
         output = ""
-        output += " " + "_"*int(msg_len+2)
+        output += " " + "_"*int(text_len+2)
         output += "\n"+f"< {text} >"
-        output += "\n " + "-"*int(msg_len+2)
+        output += "\n " + "-"*int(text_len+2)
         output += """
         \   ^__^
          \  (oo)\_______
